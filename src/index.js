@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './assets/css/grid.css'
 import './assets/css/index.css'
+import {AuthProvider} from "./hoc/AuthProvider";
 
 document.title = 'SSI'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <AuthProvider>
+          <App />
+      </AuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
