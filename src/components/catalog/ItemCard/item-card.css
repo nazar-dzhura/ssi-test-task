@@ -1,0 +1,70 @@
+.item-card {
+    padding: 10px;
+    display: flex;
+    align-items: self-start;
+    width: 100%;
+    border-radius: var(--border-radius) !important;
+    box-shadow: var(--box-shadow) !important;
+    position: relative;
+    overflow: hidden;
+    transition: transform .1s ease-in-out 0s !important;
+    margin-bottom: 20px;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.item-card__image {
+    width: 200px !important;
+    border-radius: var(--border-radius);
+    margin-right: 30px;
+}
+
+.item-card__title {
+    text-transform: capitalize;
+}
+
+.item-card__additional {
+    color: var(--txt-color);
+    font-size: 1.3rem !important;
+    max-width: 700px;
+}
+
+.item-card__delete-button {
+    position: absolute;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: var(--main-bg);
+    top: 25px;
+    right: 25px;
+}
+
+.item-card__edit-button {
+    position: absolute;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: var(--main-bg);
+    top: 85px;
+    right: 25px;
+}
+
+.item-card__delete-button:hover {
+    background-color: var(--second-bg);
+}
+
+.item-card__edit-button:hover {
+    background-color: var(--second-bg);
+}
+
+/*.book-card:hover {*/
+/*    transform: scale(1.03);*/
+/*}*/
+
+@media (max-width: 600px) {
+    .item-card {
+        display: block;
+    }
+
+    .item-card__image {
+        width: 100% !important;
+    }
+}

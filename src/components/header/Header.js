@@ -9,7 +9,7 @@ function Header(){
                 SSI Test Task
             </h1>
             <div className="header__navigation">
-                <NavLink to={'/'} className="header__navigation-link" activeClassName="header__navigation-link-active">Home</NavLink>
+                <NavLink to={'/'} className="header__navigation-link" activeClassName="header__navigation-link-active">Catalog</NavLink>
             </div>
         </header>
     )
