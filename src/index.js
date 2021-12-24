@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import './assets/css/grid.css'
+import './assets/css/index.css'
 
 document.title = 'SSI'
 
