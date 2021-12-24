@@ -19,7 +19,7 @@ function ItemCard({ item, removeItem }) {
             <CardMedia
                 className="item-card__image"
                 component="img"
-                image={item.image ? item.image : no_image}
+                image={item.imageURL ? item.imageURL : no_image}
                 alt={item.name + " image"}
             />
             <Box>
